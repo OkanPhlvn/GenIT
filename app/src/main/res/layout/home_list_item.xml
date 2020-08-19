@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/icon1"
+        tools:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_alignEnd="@+id/icon"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/createDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createDate"
+        android:layout_alignBottom="@+id/userName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/divider4"
+        android:clickable="true"
+        android:gravity="center"
+        android:shadowColor="@android:color/holo_blue_light"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorLink="@android:color/holo_blue_light"
+        android:textSelectHandle="?android:attr/textSelectHandleWindowStyle"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>
